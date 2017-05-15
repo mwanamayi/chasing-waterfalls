@@ -47,7 +47,7 @@ class << self
   end
 
   # Sends activation email.
-  def send_activation_email
+  def send_activation_mail
     UserMailer.account_activation(self).deliver_now
   end
 
